@@ -62,16 +62,16 @@ main > h2 {
     color: #333;
 }
 
-/* ORGANIZAÇÃO DOS CARTÕES LADO A LADO */
+
 .grade-cartoes {
     display: flex;
     justify-content: center;
     gap: 25px;
-    flex-wrap: wrap; /* Faz os cartões irem para a linha de baixo se não couberem */
+    flex-wrap: wrap; 
     padding: 0 40px 40px 40px;
 }
 
-/* SISTEMA DOS CARDS 3D POR CLIQUE */
+
 .cartao-container {
     perspective: 1000px; 
     width: 280px;       
@@ -87,7 +87,7 @@ main > h2 {
     transform-style: preserve-3d;
 }
 
-/* MODIFICAÇÃO: O gatilho agora é a classe '.virado' inserida pelo JavaScript */
+
 .cartao-container.virado .cartao-interno {
     transform: rotateY(180deg);
 }
@@ -149,7 +149,7 @@ footer {
     text-align: center;
 }
 
-/* RESPONSIVIDADE */
+
 @media (max-width: 768px) {
     body { padding: 10px; }
     header { font-size: 24px; }
